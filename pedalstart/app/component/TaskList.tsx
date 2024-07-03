@@ -13,9 +13,9 @@ const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
         <table className="table">
           <thead>
             <tr>
-              <th>Title</th>
-              <th>Description</th>
-              <th>Due Date</th>
+              <th className="text-black">Title</th>
+              <th className="text-black">Description</th>
+              <th className="text-black">Due Date</th>
             </tr>
           </thead>
           <tbody>

@@ -27,7 +27,7 @@ const AddTask=()=>{
     }
     return(
         <div className="">
-        <button onClick={()=>setModalOpen(true)} className="w-full btn bg-blue-700 flex justify-center py-1 rounded-lg">Add new task <CiCirclePlus size={20} /></button>
+        <button onClick={()=>setModalOpen(true)} className="w-full btn bg-black flex justify-center text-gray-400 py-1 rounded-lg hover:bg-gray-400 hover:text-black">Add new task <CiCirclePlus size={20} /></button>
         <Modal  modalOpen={modalOpen} setModalOpen={setModalOpen}>
             <form onSubmit={handleNewTaskSubmit}>
                 <h1 className="font-bold text-lg">Add your new task</h1>

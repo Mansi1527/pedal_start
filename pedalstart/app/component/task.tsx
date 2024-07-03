@@ -48,7 +48,7 @@ const TaskData: React.FC<TaskDataProps> = ({ task }) => {
           cursor="pointer"
           onClick={() => setOpenModalEdit(true)}
           size={25}
-          className="text-blue-500"
+          className="text-violet-600 hover:text-violet-300"
         />
         <Modal modalOpen={openModalEdit} setModalOpen={setOpenModalEdit}>
           <form onSubmit={handleEditSubmit}>
@@ -84,7 +84,11 @@ const TaskData: React.FC<TaskDataProps> = ({ task }) => {
 
         {/* delete tasks */}
         
-        <RiDeleteBin2Fill onClick={()=>setOpenModalDelete(true)} cursor="pointer" size={25} className="text-red-500" />
+        <RiDeleteBin2Fill 
+        onClick={()=>setOpenModalDelete(true)} 
+        cursor="pointer" 
+        size={25} 
+        className="text-red-500 hover:text-red-200" />
         <Modal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete}>
             <h3 className="text-lg">Are you sure you want to delete this task?</h3>
             <div className="modal-action">

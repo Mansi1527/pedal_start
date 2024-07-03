@@ -3,9 +3,9 @@ const baseurl="http://localhost:3001"
 
 export const getAllTask = async():Promise<Task[]>=>{
     const res= await fetch(`${baseurl}/tasks`,{cache:'no-store'});
-    // if (!res.ok) {
-    //     throw new Error(`Failed to fetch tasks: ${res.statusText}`);
-    // }
+    if (!res.ok) {
+        throw new Error(`Failed to fetch tasks: ${res.statusText}`);
+    }
     const tasks=await res.json();
     return tasks
 }
