@@ -1,5 +1,6 @@
 {
   "name": "pedalstart",
+  "homepage": "https://Mansi1527.github.io/pedal_start",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch data/task.json --port 3001"
+    "json-server": "json-server --watch data/task.json --port 3001",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
